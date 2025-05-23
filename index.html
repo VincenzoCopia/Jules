@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Candy Store</h1>
+        <button id="viewCartButton">View Cart</button>
+    </header>
+    <main id="productList">
+        <!-- Product listings will go here -->
+    </main>
+    <div id="cart" class="hidden">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems"></div>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkoutButton" style="display:none;">Checkout</button>
+    </div>
+    <div id="checkout-form" style="display:none;">
+        <h2>Checkout</h2>
+        <form id="orderForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Candy Store</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
